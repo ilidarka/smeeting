@@ -192,6 +192,7 @@ h3 {
     font-weight: 400;
     line-height: 100%;
     text-transform: uppercase;
+    text-align: center;
 }
 .howItWorks-header h2 {
     font-size: 74px;
@@ -199,6 +200,7 @@ h3 {
     font-weight: 400;
     line-height: 100%;
     text-transform: uppercase;
+    text-align: center;
 }
 .howItWorks-section-content {
     margin-top: 40px;
@@ -278,7 +280,7 @@ h3 {
 }
 .about-header h2 {
     color: #fefefe;
-    font-size: 74px;
+    font-size: 67px;
     font-style: normal;
     font-weight: 400;
     line-height: 100%;
@@ -331,7 +333,7 @@ h3 {
     justify-content: flex-end;
 }
 .about-content-middle {
-    width: 32%;
+    width: 29%;
     display: flex;
     flex-direction: column;
     align-items: center;
