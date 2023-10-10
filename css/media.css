@@ -1,4 +1,94 @@
+@media (max-width: 1450px) {
+    .organization-section .firstsection-desc {
+        width: 100%;
+    }
+    .organization-section-secondSection {
+        display: none;
+    }
+    .organization-section .wrapper {
+        justify-content: center;
+    }
+    .tablet {
+        display: flex !important;
+    }
+    .organization-section .wrapper {
+        padding: 5% 0;
+    }
+}
+@media (max-width: 1250px) {
+    .mobile {
+        display: flex !important;
+    }
+    .main-section-upper-right .tags {
+        display: none;
+    }
+    .main-section .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-section-bottom p {
+        display: none;
+    }
+    .main-section-bottom img {
+        width: 100%;
+    }
+    .main-section-upper {
+        flex-direction: column;
+        align-items: center;
+        width: min-content;
+    }
+    .main-section-upper-right p,
+    .main-section-upper-right button {
+        width: 100%;
+    }
+    .main-section-upper .section-header {
+        align-items: center;
+    }
+    .main-section-content {
+        align-items: center;
+    }
+    .create-meeting-header {
+        display: none;
+    }
+    .howItWorks-section .howItWorks-left {
+        display: none;
+    }
+    .howItWorks-section .wrapper {
+        justify-content: center;
+    }
+    .howItWorks-header h2,
+    .howItWorks-header h3 {
+        text-align: right;
+        width: 100%;
+        white-space: nowrap;
+    }
+    .howItWorks-right {
+        width: 75%;
+    }
+    footer ul,
+    footer .contact {
+        display: none;
+    }
+    footer .wrapper {
+        justify-content: center;
+    }
+    footer .copyright {
+        font-size: 14px;
+    }
+}
 @media (max-width: 768px) {
+    .howItWorks-header h2 {
+        font-size: calc(28px + (46 + 46 * 0.7) * ((100vw - 360px) / 1920));
+    }
+    .main-section h1 {
+        font-size: calc(38px + (62 + 62 * 0.7) * ((100vw - 360px) / 1920));
+    }
+    .organization-section-title .first-title {
+        font-size: calc(18px + (24 + 24 * 0.7) * ((100vw - 360px) / 1920));
+    }
+    .organization-section-title .second-title {
+        font-size: calc(28px + (46 + 46 * 0.7) * ((100vw - 360px) / 1920));
+    }
     section {
         padding: 0 20px;
     }
