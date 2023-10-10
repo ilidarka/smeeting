@@ -4,7 +4,9 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="./css/burgerMenuStyle.css" />
         <link rel="stylesheet" href="./css/media.css" />
+        <script src="./js/burgerMenyScript.js" defer></script>
         <title>Document</title>
     </head>
     <body>
@@ -12,11 +14,14 @@
             <div class="wrapper">
                 <a href="#">SECRETMEETING</a>
                 <nav>
-                    <li>Главная</li>
-                    <li>О нас</li>
-                    <li>Новая встреча</li>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Новая встреча</a></li>
                 </nav>
                 <a class="create-meeting-header" href="#">Создать встречу</a>
+                <div>
+                    <img class="burger-button" src="./img/burgerButton.svg" alt="burgerButton" />
+                </div>
             </div>
         </header>
         <main>
@@ -135,7 +140,7 @@
             <section class="about-section">
                 <div class="wrapper">
                     <div class="about-section-content">
-                        <p>
+                        <p class="desktop">
                             В SecretMeeting мы ценим вашу анонимность и конфиденциальность.
                             У нас нет необходимости в регистрации, номерах телефонов или адресах
                             электронной почты. Мы не будем задавать непристойных вопросов и не будем
@@ -155,6 +160,14 @@
                                 src="./img/aboutImage1.png"
                                 alt="aboutImage1"
                             />
+                            <p class="mobile">
+                                В SecretMeeting мы ценим вашу анонимность и конфиденциальность.
+                                У нас нет необходимости в регистрации, номерах телефонов или адресах
+                                электронной почты. Мы не будем задавать непристойных вопросов
+                                и не будем нарушать вашу частную жизнь. Все, что мы делаем, -
+                                это помогаем вам планировать встречи исключительно на ваших
+                                условиях. И самое лучшее — все услуги абсолютно бесплатны!
+                            </p>
                             <button class="about-section-button">Создать встречу</button>
                         </div>
                         <div class="about-content-right">
@@ -168,11 +181,26 @@
                                 alt="aboutImage2"
                             />
                         </div>
+                        <div class="about-image-container mobile">
+                            <img
+                                class="about-image-first"
+                                src="./img/aboutImage1.png"
+                                alt="aboutImage1"
+                            />
+                            <img
+                                class="about-image-second"
+                                src="./img/aboutImage2.png"
+                                alt="aboutImage2"
+                            />
+                        </div>
                     </div>
                 </div>
             </section>
             <section class="organization-section">
                 <div class="wrapper">
+                    <div class="organization-section-image mobile">
+                        <div class="overlay"></div>
+                    </div>
                     <div class="organization-section-firstSection">
                         <div class="organization-section-title">
                             <span class="secondsection-tag tablet"
@@ -185,6 +213,7 @@
                             >SecretMeeting – это ваш ключ к увлекательным и загадочным встречам
                             без лишних хлопот.</span
                         >
+                        <br />
                         <p class="secondsection-desc tablet">
                             Забудьте о неудобствах и бесконечных организационных вопросах. Мы делаем
                             все за вас, чтобы вы могли наслаждаться моментом. Доверьтесь нам,
@@ -216,5 +245,12 @@
                 <span class="contact">Контактное лицо | +7 999 999-99-99</span>
             </div>
         </footer>
+        <div class="burger-menu">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Новая встреча</a></li>
+            </ul>
+        </div>
     </body>
 </html>
