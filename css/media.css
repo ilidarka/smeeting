@@ -100,7 +100,7 @@
     }
     .about-image-container img {
         margin: 0;
-        width: 50%;
+        width: 47%;
     }
     .organization-section {
         background-image: none;
@@ -154,8 +154,22 @@
         font-size: calc(38px + (62 + 62 * 0.7) * ((100vw - 360px) / 1920));
     }
     .organization-section-title .first-title,
-    .about-header h3 {
+    .about-header h3,
+    .howItWorks-header h3 {
         font-size: calc(18px + (24 + 24 * 0.7) * ((100vw - 360px) / 1920));
+    }
+    .howItWorks-section-content .li-header {
+        font-size: calc(18px + (6 + 6 * 0.7) * ((100vw - 360px) / 1920));
+    }
+    .howItWorks-section-content .howItWorks-number {
+        font-size: calc(46px + (38 + 38 * 0.7) * ((100vw - 360px) / 1920));
+    }
+    .howItWorks-right {
+        width: 100%;
+    }
+    .howItWorks-section-content ul li:nth-child(even),
+    .howItWorks-section-content ul li:nth-child(odd) {
+        margin: 0;
     }
     section {
         padding: 0 20px;
@@ -168,14 +182,18 @@
     }
 }
 @media (max-width: 700px) {
+    .main-section .wrapper {
+        align-items: flex-end;
+    }
     .mobile-tags {
         flex-direction: column;
         align-items: flex-end;
-        white-space: nowrap;
+        width: max-content;
     }
     .mobile-tags li {
-        width: 32%;
+        width: 100%;
         text-align: left;
+        white-space: nowrap;
     }
     .organization-section {
         padding: 0 20px;
@@ -196,5 +214,41 @@
     .organization-section span,
     .organization-section p {
         color: #111111 !important;
+    }
+    .li-text {
+        display: none;
+    }
+    .howItWorks-section-content .howItWorks-number {
+        margin: 0;
+    }
+    .howItWorks-section-content li {
+        align-items: flex-end;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .howItWorks-section-content .mobile {
+        width: 100%;
+    }
+    .howItWorks-section-content .li-content {
+        width: 76%;
+    }
+    .li-text-mobile {
+        display: flex;
+    }
+    .about-content-middle {
+        width: 100%;
+    }
+    .about-section .about-header {
+        width: 100%;
+        gap: 10px;
+    }
+    .about-section .wrapper {
+        padding: 40px 0;
+    }
+    .about-title-span-mobile {
+        display: flex;
+    }
+    .about-content-middle .about-section-button {
+        width: 100%;
     }
 }
