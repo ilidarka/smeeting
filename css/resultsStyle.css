@@ -43,7 +43,7 @@
 .result-table .question {
     text-align: left;
     color: #111;
-    font-size: 16px;
+    font-size: calc(14px + 2 * (100vw / 1920));
     font-style: normal;
     font-weight: 400;
     line-height: 120%;
@@ -55,7 +55,7 @@
 }
 .negativeAnswer {
     color: #111;
-    font-size: 16px;
+    font-size: calc(14px + 2 * (100vw / 1920));
     font-style: normal;
     font-weight: 400;
     line-height: 110%;
@@ -63,7 +63,7 @@
 }
 .positiveAnswer {
     color: #e5231a;
-    font-size: 16px;
+    font-size: calc(14px + 2 * (100vw / 1920));
     font-style: normal;
     font-weight: 400;
     line-height: 110%;
@@ -82,7 +82,7 @@
 .header-secondRow th {
     background: #f5f5f5;
     color: #111;
-    font-size: 16px;
+    font-size: calc(14px + 2 * (100vw / 1920));
     font-style: normal;
     font-weight: 700;
     line-height: 110%;
