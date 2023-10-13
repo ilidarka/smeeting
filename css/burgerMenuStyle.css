@@ -1,5 +1,6 @@
 .burger-menu {
     display: none;
+    flex-direction: column;
     position: absolute;
     background-color: #fefefe;
     border: 1px solid #111;
@@ -7,6 +8,15 @@
     padding: 40px 20px;
     top: 0;
     right: 0;
+}
+.burger-menu-opened {
+    display: flex;
+}
+.burger-menu .burger-close {
+    transform: rotate(45deg);
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 .burger-menu ul {
     display: flex;
@@ -24,4 +34,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
+}
+.burger-button {
+    display: none;
 }
