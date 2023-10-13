@@ -7,6 +7,8 @@
     display: flex;
     justify-content: space-between;
     padding: 70px 0;
+    flex-wrap: wrap;
+    height: max-content;
 }
 .question-tags {
     display: flex;
@@ -14,6 +16,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     gap: 5px;
+    height: max-content;
 }
 .question-tags span {
     color: #a11e2a;
@@ -26,9 +29,19 @@
 .questions {
     width: 75%;
     display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: max-content;
+}
+.question {
+    width: 100%;
+    display: none;
     flex-direction: column;
     align-items: flex-start;
-    gap: 24px;
+    gap: 20px;
+}
+.active-question {
+    display: flex;
 }
 .question-number {
     color: #767676;
@@ -55,9 +68,13 @@
     text-transform: uppercase;
 }
 .question-control {
+    margin-top: 30px;
+    width: 100%;
     display: flex;
+    justify-content: center;
     gap: 10px;
     align-items: center;
+    height: max-content;
 }
 .prev-arrow,
 .next-arrow {
@@ -65,9 +82,11 @@
 }
 .active {
     stroke: #a11e2a;
+    cursor: pointer;
 }
 .unnactive {
     stroke: #767676;
+    cursor: pointer;
 }
 .previous {
     color: #767676;
@@ -85,4 +104,10 @@
 }
 .mobile-question-image {
     display: none;
+}
+.prev-button,
+.next-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }

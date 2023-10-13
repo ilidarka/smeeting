@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="./css/media.css" />
         <link rel="stylesheet" href="./css/questionMediaStyle.css" />
         <script src="./js/burgerMenuScript.js" defer></script>
+        <script src="./js/questionScript.js" defer></script>
         <title>Document</title>
     </head>
     <body>
@@ -36,25 +37,30 @@
                             <span>#Анонимный ответ</span>
                         </div>
                         <div class="questions">
-                            <span class="question-number"
-                                ><span class="current-question">1</span> / 3</span
-                            >
-                            <span class="question-text"
-                                >Что вас больше всего удивило когда‑либо в данном месте?</span
-                            >
-                            <div class="control-group">
-                                <label class="control control-radio">
-                                    Да
-                                    <input type="radio" name="radio" checked="checked" />
-                                    <div class="control_indicator"></div>
-                                </label>
-                                <label class="control control-radio">
-                                    Нет
-                                    <input type="radio" name="radio" />
-                                    <div class="control_indicator"></div>
-                                </label>
+                            <div data-questionNumber="0" class="question active-question">
+                                <span class="question-number"
+                                    ><span class="current-question">1</span> /
+                                    <span class="question-count">3</span></span
+                                >
+                                <span class="question-text"
+                                    >Что вас больше всего удивило когда‑либо в данном месте?</span
+                                >
+                                <div class="control-group">
+                                    <label class="control control-radio">
+                                        Да
+                                        <input type="radio" name="radio" checked="checked" />
+                                        <div class="control_indicator"></div>
+                                    </label>
+                                    <label class="control control-radio">
+                                        Нет
+                                        <input type="radio" name="radio" />
+                                        <div class="control_indicator"></div>
+                                    </label>
+                                </div>
                             </div>
-                            <div class="question-control">
+                        </div>
+                        <div class="question-control">
+                            <div class="prev-button">
                                 <svg
                                     class="prev-arrow unnactive"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -68,10 +74,11 @@
                                         fill="#767676"
                                     />
                                 </svg>
-                                <span
-                                    ><span class="previous unnactive">Назад</span> /
-                                    <span class="next active">Следующий</span></span
-                                >
+                                <span class="previous unnactive">Назад</span>
+                            </div>
+                            <span> / </span>
+                            <div class="next-button">
+                                <span class="next active">Следующий</span>
                                 <svg
                                     class="next-arrow active"
                                     xmlns="http://www.w3.org/2000/svg"
