@@ -1,12 +1,16 @@
 .control {
-    font-family: arial;
     display: block;
     position: relative;
     padding-left: 30px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     padding-top: 3px;
     cursor: pointer;
+    color: #111;
+    font-family: Helvetica;
     font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
 }
 .control input {
     position: absolute;
