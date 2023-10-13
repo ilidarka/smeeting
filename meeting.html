@@ -1,154 +1,168 @@
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/burgerMenuStyle.css" />
-    <link rel="stylesheet" href="./css/meetingStyle.css">
-    <link rel="stylesheet" href="./css/meetingMediaStyle.css">
-    <link rel="stylesheet" href="./css/checkboxStyle.css">
-    <link rel="stylesheet" href="./css/media.css" />
-    <script src="./js/burgerMenuScript.js" defer></script>
-    <script src="./js/meetingScript.js" defer></script>
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <div class="wrapper">
-            <a href="#">SECRETMEETING</a>
-            <nav>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Новая встреча</a></li>
-            </nav>
-            <a class="create-meeting-header" href="#">Создать встречу</a>
-            <div>
-                <img class="burger-button" src="./img/burgerButton.svg" alt="burgerButton" />
-            </div>
-        </div>
-    </header>
-    <main>
-        <div class="meeting-header">
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="./css/burgerMenuStyle.css" />
+        <link rel="stylesheet" href="./css/meetingStyle.css" />
+        <link rel="stylesheet" href="./css/meetingMediaStyle.css" />
+        <link rel="stylesheet" href="./css/checkboxStyle.css" />
+        <link rel="stylesheet" href="./css/media.css" />
+        <script src="./js/burgerMenuScript.js" defer></script>
+        <script src="./js/meetingScript.js" defer></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
             <div class="wrapper">
-                <h2>Новая встреча</h2>
-            </div>
-        </div>
-        <section class="member-section">
-            <div class="wrapper">
-                <div class="member-header">
-                    <h3>Участники встречи</h3>
-                    <span>Добавьте участников</span>
-                </div>
-                <div class="members-list">
-                    <div class="member-item-empty">+</div>
-                    <div class="member-item-empty">+</div>
-                    <div class="member-item-empty">+</div>
+                <a href="#">SECRETMEETING</a>
+                <nav>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Новая встреча</a></li>
+                </nav>
+                <a class="create-meeting-header" href="#">Создать встречу</a>
+                <div>
+                    <img class="burger-button" src="./img/burgerButton.svg" alt="burgerButton" />
                 </div>
             </div>
-        </section>
-        <section class="questions-section">
-            <div class="wrapper">
-                <div class="questions-header">
-                    <h3>Список вопросов</h3>
-                    <span>Выберите вопросы из списка</span>
+        </header>
+        <main>
+            <div class="meeting-header">
+                <div class="wrapper">
+                    <h2>Новая встреча</h2>
                 </div>
-                <div class="questions-list">
-                    <div class="question-item">
-                        Жизнь в большом городе зачастую накладывает на людей очень много обязательств, которые многим мешают планировать свое время.
-                        <img src="./img/questionImage.svg" alt="questionImage">
+            </div>
+            <section class="member-section">
+                <div class="wrapper">
+                    <div class="member-header">
+                        <h3>Участники встречи</h3>
+                        <span>Добавьте участников</span>
                     </div>
-                    <div class="question-item">
-                        Что вас больше всего удивило когда‑либо в данном месте?
-                        <img src="./img/questionImage.svg" alt="questionImage">
-                    </div>
-                    <div class="question-item">
-                        Жизнь в большом городе зачастую накладывает на людей очень много обязательств, которые многим мешают планировать свое время.
-                        <img src="./img/questionImage.svg" alt="questionImage">
-                    </div>
-                    <div class="question-item">
-                        Что вас больше всего удивило когда‑либо в данном месте?
-                        <img src="./img/questionImage.svg" alt="questionImage">
-                    </div>
-                    <div class="question-item">
-                        Жизнь в большом городе зачастую накладывает на людей очень много обязательств, которые многим мешают планировать свое время.
-                        <img src="./img/questionImage.svg" alt="questionImage">
-                    </div>
-                    <div class="addQuestion-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="20" viewBox="0 0 23 20" fill="none">
-                            <path d="M12.3622 0.189911H10.6377V9.24139H0.349609V10.7586H10.6377V19.8101H12.3622V10.7586H22.6504V9.24139H12.3622V0.189911Z" fill="#767676"/>
-                        </svg>
-                        <span>Добавить вопрос</span>
+                    <div class="members-list">
+                        <div class="member-item-empty">+</div>
+                        <div class="member-item-empty">+</div>
+                        <div class="member-item-empty">+</div>
                     </div>
                 </div>
-                <div class="questions-control">
-                    <div class="questions-control-left">
-                        <div class="control-group">
-                            <label class="control control-checkbox">
-                                Выбрать все
-                                    <input id="questions-check" type="checkbox"/>
-                                <div class="control_indicator"></div>
-                            </label>
+            </section>
+            <section class="questions-section">
+                <div class="wrapper">
+                    <div class="questions-header">
+                        <h3>Список вопросов</h3>
+                        <span>Выберите вопросы из списка</span>
+                    </div>
+                    <div class="questions-list">
+                        <div class="question-item">
+                            Жизнь в большом городе зачастую накладывает на людей очень много
+                            обязательств, которые многим мешают планировать свое время.
+                            <img src="./img/questionImage.svg" alt="questionImage" />
                         </div>
-                        <span>Всего 18/48</span>
+                        <div class="question-item">
+                            Что вас больше всего удивило когда‑либо в данном месте?
+                            <img src="./img/questionImage.svg" alt="questionImage" />
+                        </div>
+                        <div class="question-item">
+                            Жизнь в большом городе зачастую накладывает на людей очень много
+                            обязательств, которые многим мешают планировать свое время.
+                            <img src="./img/questionImage.svg" alt="questionImage" />
+                        </div>
+                        <div class="question-item">
+                            Что вас больше всего удивило когда‑либо в данном месте?
+                            <img src="./img/questionImage.svg" alt="questionImage" />
+                        </div>
+                        <div class="question-item">
+                            Жизнь в большом городе зачастую накладывает на людей очень много
+                            обязательств, которые многим мешают планировать свое время.
+                            <img src="./img/questionImage.svg" alt="questionImage" />
+                        </div>
+                        <div class="addQuestion-button">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="23"
+                                height="20"
+                                viewBox="0 0 23 20"
+                                fill="none"
+                            >
+                                <path
+                                    d="M12.3622 0.189911H10.6377V9.24139H0.349609V10.7586H10.6377V19.8101H12.3622V10.7586H22.6504V9.24139H12.3622V0.189911Z"
+                                    fill="#767676"
+                                />
+                            </svg>
+                            <span>Добавить вопрос</span>
+                        </div>
                     </div>
-                    <button class="send-question-button">Отправить</button>
+                    <div class="questions-control">
+                        <div class="questions-control-left">
+                            <div class="control-group">
+                                <label class="control control-checkbox">
+                                    Выбрать все
+                                    <input id="questions-check" type="checkbox" />
+                                    <div class="control_indicator"></div>
+                                </label>
+                            </div>
+                            <span>Всего 18/48</span>
+                        </div>
+                        <button class="send-question-button">Отправить</button>
+                    </div>
                 </div>
+            </section>
+        </main>
+        <footer>
+            <div class="wrapper">
+                <span class="copyright">© SecretMeeting 2023. Все права защищены</span>
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Встреча</a></li>
+                </ul>
+                <span class="contact">Контактное лицо | +7 999 999-99-99</span>
             </div>
-        </section>
-    </main>
-    <footer>
-        <div class="wrapper">
-            <span class="copyright">© SecretMeeting 2023. Все права защищены</span>
-            <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Встреча</a></li>
-            </ul>
-            <span class="contact">Контактное лицо | +7 999 999-99-99</span>
-        </div>
-    </footer>
-    <div class="burger-menu">
-        <svg
-            class="burger-close"
-            xmlns="http://www.w3.org/2000/svg"
-            width="23"
-            height="20"
-            viewBox="0 0 23 20"
-            fill="none"
-        >
-            <path
-                d="M12.3622 0.189911H10.6377V9.24139H0.349609V10.7586H10.6377V19.8101H12.3622V10.7586H22.6504V9.24139H12.3622V0.189911Z"
-                fill="#767676"
-            />
-        </svg>
-        <ul>
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Новая встреча</a></li>
-        </ul>
-    </div>
-    <div class="add-question">
-        <div class="form-container">
-            <div class="form-header">
-                <svg
+        </footer>
+        <div class="burger-menu">
+            <svg
+                class="burger-close"
                 xmlns="http://www.w3.org/2000/svg"
                 width="23"
                 height="20"
                 viewBox="0 0 23 20"
                 fill="none"
-                >
+            >
                 <path
                     d="M12.3622 0.189911H10.6377V9.24139H0.349609V10.7586H10.6377V19.8101H12.3622V10.7586H22.6504V9.24139H12.3622V0.189911Z"
                     fill="#767676"
                 />
-                </svg>
-                <span>Введите ваш вопрос</span>
-            </div>
-            <div class="input-container">
-                <label id="input-label" for="question-input">(0/200)</label>
-                <input id="question-input" type="text" placeholder="Вопрос" maxlength="200"/>
-            </div>
-            <button class="add-question-button">Отправить</button>
+            </svg>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Новая встреча</a></li>
+            </ul>
         </div>
-    </div>
-</body>
+        <div class="add-question">
+            <div class="form-container">
+                <div class="form-header">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="23"
+                        height="20"
+                        viewBox="0 0 23 20"
+                        fill="none"
+                    >
+                        <path
+                            d="M12.3622 0.189911H10.6377V9.24139H0.349609V10.7586H10.6377V19.8101H12.3622V10.7586H22.6504V9.24139H12.3622V0.189911Z"
+                            fill="#767676"
+                        />
+                    </svg>
+                    <span>Введите ваш вопрос</span>
+                </div>
+                <div class="input-container">
+                    <label id="input-label" for="question-input">(0/200)</label>
+                    <input id="question-input" type="text" placeholder="Вопрос" maxlength="200" />
+                </div>
+                <button class="add-question-button">Отправить</button>
+            </div>
+        </div>
+    </body>
 </html>

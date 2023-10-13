@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="./css/questionStyle.css" />
+        <link rel="stylesheet" href="./css/burgerMenuStyle.css" />
+        <link rel="stylesheet" href="./css/radioButtonStyle.css" />
+        <link rel="stylesheet" href="./css/media.css" />
+        <link rel="stylesheet" href="./css/questionMediaStyle.css" />
+        <script src="./js/burgerMenuScript.js" defer></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <div class="wrapper">
+                <a href="#">SECRETMEETING</a>
+                <nav>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Новая встреча</a></li>
+                </nav>
+                <a class="create-meeting-header" href="#">Создать встречу</a>
+                <div>
+                    <img class="burger-button" src="./img/burgerButton.svg" alt="burgerButton" />
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="question-section">
+                <div class="wrapper">
+                    <div class="question-content">
+                        <div class="question-tags">
+                            <span>#Нам важен честный ответ</span>
+                            <span>#Анонимный ответ</span>
+                        </div>
+                        <div class="questions">
+                            <span class="question-number">1 / 3</span>
+                            <span class="question-text"
+                                >Что вас больше всего удивило когда‑либо в данном месте?</span
+                            >
+                            <div class="control-group">
+                                <label class="control control-radio">
+                                    Да
+                                    <input type="radio" name="radio" checked="checked" />
+                                    <div class="control_indicator"></div>
+                                </label>
+                                <label class="control control-radio">
+                                    Нет
+                                    <input type="radio" name="radio" />
+                                    <div class="control_indicator"></div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./img/questionImage.png" alt="questionImage" />
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="wrapper">
+                <span class="copyright">© SecretMeeting 2023. Все права защищены</span>
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Встреча</a></li>
+                </ul>
+                <span class="contact">Контактное лицо | +7 999 999-99-99</span>
+            </div>
+        </footer>
+        <div class="burger-menu">
+            <svg
+                class="burger-close"
+                xmlns="http://www.w3.org/2000/svg"
+                width="23"
+                height="20"
+                viewBox="0 0 23 20"
+                fill="none"
+            >
+                <path
+                    d="M12.3622 0.189911H10.6377V9.24139H0.349609V10.7586H10.6377V19.8101H12.3622V10.7586H22.6504V9.24139H12.3622V0.189911Z"
+                    fill="#767676"
+                />
+            </svg>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Новая встреча</a></li>
+            </ul>
+        </div>
+    </body>
+</html>
