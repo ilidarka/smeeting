@@ -10,9 +10,46 @@ let questionsList = document.querySelector('.questions-list');
 let questionInput = document.getElementById('question-input');
 let memberItemEmpty = document.querySelector('.member-item-empty');
 let addMember = document.querySelector('.add-member');
+let memberItem = document.querySelectorAll('.member-item');
+let membersList = document.querySelector('.members-list');
+let memberDeleteButton = document.querySelectorAll('.member-delete-button');
 
 questionInput.addEventListener('input', () => {
     document.getElementById('input-label').innerHTML = `(${questionInput.value.length}/200)`;
+});
+
+function createNewMember() {
+    let newMember = document.createElement('div');
+    newMember.classList.add('member-item');
+    let newMemberHeader = document.createElement('div');
+    newMemberHeader.classList.add('member-item-header');
+    let newMemberName = document.createElement('span');
+    newMemberName.classList.add('member-name');
+    newMemberName.textContent = 'Новый участник';
+    let newMemberDeleteButton = document.createElement('img');
+    newMemberDeleteButton.classList.add('member-delete-button');
+    newMemberHeader.appendChild(newMemberName);
+    newMemberHeader.appendChild(newMemberDeleteButton);
+    let newMemberGender = document.createElement('span');
+    newMemberGender.classList.add('member-gender');
+    newMemberGender.textContent = 'Пол: мж';
+}
+
+/*
+                            <div class="member-link">
+                                <input class="member-link-input" type="text" placeholder="link" />
+                                <button class="link-button">
+                                    Копировать ссылку
+                                </button>
+                            </div>
+
+
+*/
+
+memberDeleteButton.forEach((item) => {
+    item.addEventListener('click', () => {
+        item.parentNode.parentNode.remove();
+    });
 });
 
 let handleEvent = (item) => {

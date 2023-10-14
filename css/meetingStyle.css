@@ -74,6 +74,9 @@
     justify-content: space-between;
     align-items: center;
 }
+.member-item-header .member-delete-button {
+    cursor: pointer;
+}
 .member-name {
     color: #111;
     font-size: 18px;
@@ -103,8 +106,50 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    /* padding: 54px 192px; */
     cursor: pointer;
+}
+.member-link {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.member-link-input {
+    height: 30px;
+    width: 47%;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border: 1px solid #ddd;
+    background: #f5f5f5;
+    overflow: hidden;
+    color: #767676;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    padding: 5px 10px;
+    border-right: none;
+}
+.link-button {
+    width: 53%;
+    height: 30px;
+    border: 1px solid #ddd;
+    background: #f5f5f5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px 10px;
+    color: #c00900;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border-left: none;
+    gap: 10px;
 }
 .questions-section {
     margin: 150px 0;
