@@ -57,8 +57,43 @@
     justify-content: center;
     gap: 20px;
 }
+.member-item {
+    min-height: 201px;
+    max-width: 356px;
+    width: 100%;
+    border: 1px solid #767676;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.member-item-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.member-name {
+    color: #111;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+}
+.member-gender {
+    color: #111;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    width: 100%;
+    text-align: left;
+}
 .member-item-empty {
-    width: 20%;
+    max-width: 356px;
+    width: 100%;
+    min-height: 201px;
     border: 1px solid #767676;
     display: flex;
     align-items: center;
@@ -68,7 +103,8 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding: 54px 192px;
+    /* padding: 54px 192px; */
+    cursor: pointer;
 }
 .questions-section {
     margin: 150px 0;
@@ -165,7 +201,8 @@
     font-weight: 400;
     line-height: 110%;
 }
-.add-question {
+.add-question,
+.add-member {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -175,10 +212,12 @@
     background: rgba(17, 17, 17, 0.15);
     backdrop-filter: blur(3.5px);
 }
-.add-question-opened {
+.add-question-opened,
+.add-member-opened {
     display: flex;
 }
-.add-question span {
+.add-question span,
+.add-member span {
     color: #111;
     font-size: 24px;
     font-style: normal;
@@ -202,7 +241,8 @@
     align-items: center;
     gap: 10px;
 }
-.add-question svg {
+.add-question svg,
+.add-member svg {
     transform: rotate(45deg);
     cursor: pointer;
 }
@@ -213,7 +253,8 @@
     align-items: flex-start;
     gap: 5px;
 }
-.input-container #question-input {
+.input-container #question-input,
+.add-member #member-input {
     height: 36px;
     width: 100%;
     color: #767676;
@@ -232,7 +273,8 @@
     font-weight: 400;
     line-height: normal;
 }
-.add-question-button {
+.add-question-button,
+.add-member-button {
     background-color: #111;
     height: 50px;
     width: 100%;
@@ -240,4 +282,20 @@
     font-style: normal;
     font-weight: 400;
     line-height: 110%;
+}
+.control-group {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+.add-member .form-span {
+    color: #767676;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: left;
 }

@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="./css/meetingMediaStyle.css" />
         <link rel="stylesheet" href="./css/checkboxStyle.css" />
         <link rel="stylesheet" href="./css/media.css" />
+        <link rel="stylesheet" href="./css/radioButtonStyle.css" />
         <script src="./js/burgerMenuScript.js" defer></script>
         <script src="./js/meetingScript.js" defer></script>
         <title>Document</title>
@@ -41,8 +42,45 @@
                         <span>Добавьте участников</span>
                     </div>
                     <div class="members-list">
-                        <div class="member-item-empty">+</div>
-                        <div class="member-item-empty">+</div>
+                        <div class="member-item">
+                            <div class="member-item-header">
+                                <span class="member-name">Имя Участника</span>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M3 21V20C3 17.7909 4.79086 16 7 16H11C13.2091 16 15 17.7909 15 20V21"
+                                        stroke="#767676"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                    />
+                                    <path
+                                        d="M9 13C7.34315 13 6 11.6569 6 10C6 8.34315 7.34315 7 9 7C10.6569 7 12 8.34315 12 10C12 11.6569 10.6569 13 9 13Z"
+                                        stroke="#767676"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                    />
+                                    <path
+                                        d="M15 3L21 9"
+                                        stroke="#767676"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                    />
+                                    <path
+                                        d="M21 3L15 9"
+                                        stroke="#767676"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                    />
+                                </svg>
+                            </div>
+                            <span class="member-gender">Пол: Мужской</span>
+                            <input class="member-link" type="text" />
+                        </div>
                         <div class="member-item-empty">+</div>
                     </div>
                 </div>
@@ -162,6 +200,40 @@
                     <input id="question-input" type="text" placeholder="Вопрос" maxlength="200" />
                 </div>
                 <button class="add-question-button">Отправить</button>
+            </div>
+        </div>
+        <div class="add-member">
+            <div class="form-container">
+                <div class="form-header">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="23"
+                        height="20"
+                        viewBox="0 0 23 20"
+                        fill="none"
+                    >
+                        <path
+                            d="M12.3622 0.189911H10.6377V9.24139H0.349609V10.7586H10.6377V19.8101H12.3622V10.7586H22.6504V9.24139H12.3622V0.189911Z"
+                            fill="#767676"
+                        />
+                    </svg>
+                    <span>Введите ваш запрос</span>
+                </div>
+                <input id="member-input" type="text" placeholder="ИМЯ УЧАСТНИКА" maxlength="200" />
+                <span class="form-span">Пол участника</span>
+                <div class="control-group">
+                    <label class="control control-radio">
+                        Мужской
+                        <input type="radio" name="radio" checked="checked" />
+                        <div class="control_indicator"></div>
+                    </label>
+                    <label class="control control-radio">
+                        Женский
+                        <input type="radio" name="radio" />
+                        <div class="control_indicator"></div>
+                    </label>
+                </div>
+                <button class="add-member-button">Отправить</button>
             </div>
         </div>
     </body>

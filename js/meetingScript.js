@@ -2,11 +2,14 @@ let questionItem;
 let questionItemDelete;
 let questionCheck = document.getElementById('questions-check');
 let questionCloseButton = document.querySelector('.add-question svg');
+let memberCloseButton = document.querySelector('.add-member svg');
 let addQuestion = document.querySelector('.add-question');
 let addQuestionButton = document.querySelector('.addQuestion-button');
-let addQuestionButtonForm = document.querySelector('.add-Question-button');
+let addQuestionButtonForm = document.querySelector('.add-question-button');
 let questionsList = document.querySelector('.questions-list');
 let questionInput = document.getElementById('question-input');
+let memberItemEmpty = document.querySelector('.member-item-empty');
+let addMember = document.querySelector('.add-member');
 
 questionInput.addEventListener('input', () => {
     document.getElementById('input-label').innerHTML = `(${questionInput.value.length}/200)`;
@@ -60,7 +63,6 @@ addQuestionButtonForm.addEventListener('click', () => {
     newQuestion.addEventListener('click', (event) => handleEvent(event.currentTarget));
     newQuestion.appendChild(questionClose);
     questionsList.insertBefore(newQuestion, addQuestionButton);
-    console.log(questionsList);
 });
 
 questionCloseButton.addEventListener('click', () => {
@@ -69,4 +71,28 @@ questionCloseButton.addEventListener('click', () => {
 
 addQuestionButton.addEventListener('click', () => {
     addQuestion.classList.toggle('add-question-opened');
+});
+
+addQuestion.addEventListener('click', (event) => {
+    if (event.target.closest('.form-container')) {
+        event.stopImmediatePropagation();
+    } else {
+        addQuestion.classList.toggle('add-question-opened');
+    }
+});
+
+memberItemEmpty.addEventListener('click', () => {
+    addMember.classList.toggle('add-member-opened');
+});
+
+memberCloseButton.addEventListener('click', () => {
+    addMember.classList.toggle('add-member-opened');
+});
+
+addMember.addEventListener('click', (event) => {
+    if (event.target.closest('.form-container')) {
+        event.stopImmediatePropagation();
+    } else {
+        addMember.classList.toggle('add-member-opened');
+    }
 });
