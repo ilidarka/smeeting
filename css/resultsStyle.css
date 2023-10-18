@@ -18,8 +18,15 @@
     margin-top: 80px;
 }
 .result-section .wrapper {
+    flex-direction: column-reverse;
     align-items: center;
+    margin-bottom: 30px;
+    justify-content: flex-end;
     gap: 40px;
+}
+.result-section img {
+    width: 100%;
+    height: 70%;
 }
 .result-section-content {
     width: 100%;

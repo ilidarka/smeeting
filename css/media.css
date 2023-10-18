@@ -19,42 +19,11 @@
     .mobile {
         display: flex !important;
     }
-    .main-section-upper-right .tags {
-        display: none;
-    }
-    .main-section .wrapper {
-        flex-direction: column;
-        align-items: center;
-    }
-    .main-section-bottom p {
-        display: none;
-    }
-    .main-section-bottom img {
-        width: 100%;
-    }
-    .main-section-upper {
-        flex-direction: column;
-        align-items: center;
-        width: min-content;
-    }
-    .main-section-upper-right p,
-    .main-section-upper-right button {
-        width: 100%;
-    }
-    .main-section-upper .section-header {
-        align-items: center;
-    }
-    .main-section-content {
-        align-items: center;
-    }
     .create-meeting-header {
         display: none;
     }
     .howItWorks-section .howItWorks-left {
         display: none;
-    }
-    .howItWorks-section .wrapper {
-        justify-content: center;
     }
     .howItWorks-header h2,
     .howItWorks-header h3 {
@@ -74,33 +43,11 @@
     .about-section .desktop {
         display: none !important;
     }
-    .about-section p {
-        width: 100%;
-    }
-    .about-section-content {
-        flex-direction: column;
-        align-items: center;
-    }
-    .about-content-middle {
-        width: 60%;
-        align-items: flex-start;
-        gap: 30px;
-    }
-    .about-image-container {
-        align-items: center;
-        width: 100%;
-        gap: 20px;
-        margin-top: 30px;
-    }
     .about-title {
         justify-content: flex-start;
     }
     .about-section-button {
         width: 70%;
-    }
-    .about-image-container img {
-        margin: 0;
-        width: 47%;
     }
     .organization-section {
         background-image: none;
