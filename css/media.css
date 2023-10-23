@@ -32,7 +32,7 @@
         white-space: nowrap;
     }
     .howItWorks-right {
-        width: 75%;
+        width: 100%;
     }
     .about-content-right {
         display: none;
@@ -43,12 +43,6 @@
     .about-section .desktop {
         display: none !important;
     }
-    .about-title {
-        justify-content: flex-start;
-    }
-    .about-section-button {
-        width: 70%;
-    }
     .organization-section {
         background-image: none;
         background-color: #a11e2a;
@@ -56,18 +50,8 @@
     }
     .organization-section .wrapper {
         width: 100%;
-        justify-content: flex-start;
         gap: 20px;
         max-width: none;
-    }
-    .organization-section-image {
-        background-image: url('../img/organizationimage.png');
-        background-repeat: no-repeat;
-        width: 20%;
-        height: 100%;
-        display: flex;
-        background-size: 100% 70%;
-        background-position-y: bottom;
     }
     .organization-section-firstSection {
         width: 55%;
@@ -120,7 +104,7 @@
         margin: 0;
     }
     section {
-        padding: 0 20px;
+        padding: 0 10px;
     }
     .wrapper {
         max-width: 728px;
@@ -154,7 +138,7 @@
         padding: 0 20px;
     }
     .organization-section .wrapper {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
     }
     .organization-section-firstSection {
@@ -165,6 +149,11 @@
         width: 100%;
         background-color: #111111;
         color: #fefefe;
+    }
+    .organization-section-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
     }
     .organization-section span,
     .organization-section p {
@@ -191,6 +180,7 @@
         display: flex;
     }
     .about-content-middle {
+        align-items: center;
         width: 100%;
     }
     .about-section .about-header {
@@ -202,12 +192,5 @@
     }
     .about-title-span-mobile {
         display: flex;
-    }
-    .about-content-middle .about-section-button {
-        width: 100%;
-    }
-    .mobile-image {
-        display: block;
-        width: 100%;
     }
 }

@@ -14,10 +14,12 @@ body {
     flex-direction: column;
     align-items: center;
     position: relative;
+    justify-content: space-between;
 }
 .wrapper {
     width: 100%;
     display: flex;
+    max-width: 728px;
 }
 header,
 main,
@@ -107,7 +109,7 @@ h3 {
 }
 .main-section h1 {
     color: #111;
-    font-size: calc(38px + 62 * (100vw / 1920));
+    font-size: calc(38px + 62 * (100% / 1920));
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
@@ -166,6 +168,7 @@ h3 {
     gap: 55px;
     flex-direction: column;
     align-items: center;
+    max-width: 466px;
 }
 .main-section-upper-right {
     display: flex;
@@ -193,12 +196,13 @@ h3 {
     width: 100%;
     align-items: center;
     justify-content: center;
+    max-width: 541px;
 }
 .howItWorks-left img {
     width: 100%;
 }
 .howItWorks-right {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -208,10 +212,10 @@ h3 {
     display: flex;
     gap: 10px;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
 }
 .howItWorks-header h3 {
-    font-size: calc(18px + 24 * (100vw / 1920));
+    font-size: 28px;
     font-style: normal;
     font-weight: 400;
     line-height: 100%;
@@ -219,7 +223,7 @@ h3 {
     text-align: center;
 }
 .howItWorks-header h2 {
-    font-size: calc(28px + 46 * (100vw / 1920));
+    font-size: 42px;
     font-style: normal;
     font-weight: 400;
     line-height: 100%;
@@ -328,10 +332,11 @@ h3 {
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
+    max-width: 460px;
     width: 100%;
 }
 .about-section-button {
-    width: 100%;
+    width: 330px;
     height: 50px;
 }
 .about-section-images {
@@ -361,10 +366,10 @@ h3 {
     justify-content: flex-end;
 }
 .about-content-middle {
-    width: 60%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 30px;
 }
 .about-content-middle img {
@@ -378,7 +383,7 @@ h3 {
 .about-image-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     gap: 20px;
     margin-top: 30px;
@@ -395,16 +400,14 @@ h3 {
 }
 .organization-section {
     width: 100%;
-    background-image: linear-gradient(rgba(161, 30, 42, 0.9), rgba(161, 30, 42, 0.9)),
-        url('../img/organizationimage.png');
-    background-repeat: no-repeat;
-    background-blend-mode: lighten;
-    justify-content: flex-end;
+    background-color: #a11e2a;
 }
 .organization-section .wrapper {
     width: 50%;
     justify-content: space-between;
     padding: 135px 0;
+    align-items: flex-end;
+    gap: 20px;
 }
 .organization-section-title {
     display: flex;
@@ -435,7 +438,7 @@ h3 {
     font-weight: 400;
     line-height: 20px;
     margin-top: 40px;
-    width: 40%;
+    width: 100%;
 }
 .organization-section .firstsection-button {
     background-color: #fefefe;
@@ -445,7 +448,8 @@ h3 {
     margin-top: 20px;
 }
 .organization-section-firstSection {
-    width: min-content;
+    max-width: 466px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -470,6 +474,13 @@ h3 {
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
+}
+.organization-section-image {
+    width: 187px;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 footer {
     background-color: #111;

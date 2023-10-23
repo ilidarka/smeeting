@@ -167,7 +167,7 @@
 }
 .questions-list {
     margin-top: 40px;
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -219,7 +219,7 @@
 }
 .questions-control {
     margin-top: 30px;
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -237,7 +237,7 @@
     text-transform: uppercase;
 }
 .send-question-button {
-    width: 50%;
+    width: 354px;
     height: 50px;
     color: #fefefe;
     background-color: #111;
