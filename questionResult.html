@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="./css/questionStyle.css" />
+        <link rel="stylesheet" href="./css/burgerMenuStyle.css" />
+        <link rel="stylesheet" href="./css/radioButtonStyle.css" />
+        <link rel="stylesheet" href="./css/media.css" />
+        <link rel="stylesheet" href="./css/questionMediaStyle.css" />
+        <link rel="stylesheet" href="./css/questionResultStyle.css" />
+        <script src="./js/burgerMenuScript.js" defer></script>
+        <script src="./js/questionScript.js" defer></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <div class="wrapper">
+                <a href="#">SECRETMEETING</a>
+                <nav>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Новая встреча</a></li>
+                </nav>
+                <img class="burger-button" src="./img/burgerButton.svg" alt="burgerButton" />
+            </div>
+        </header>
+        <main>
+            <section class="question-section">
+                <div class="wrapper">
+                    <div class="question-content">
+                        <div class="questions">
+                            <div data-questionNumber="0" class="question active-question">
+                                <span class="question-number"
+                                    ><span class="current-question">3</span> /
+                                    <span class="question-count">3</span></span
+                                >
+                                <span class="thank">Спасибо!</span>
+                                <span class="thank-second">Вы ответили на все вопросы</span>
+                            </div>
+                        </div>
+                    </div>
+                    <img
+                        class="desktop-question-image"
+                        src="./img/questionImage.png"
+                        alt="questionImage"
+                    />
+                    <img
+                        class="mobile-question-image"
+                        src="./img/questionImage2.png"
+                        alt="questionImage2"
+                    />
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="wrapper">
+                <span class="copyright">© SecretMeeting 2023. Все права защищены</span>
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Встреча</a></li>
+                </ul>
+                <span class="contact">Контактное лицо | +7 999 999-99-99</span>
+            </div>
+        </footer>
+        <div class="burger-menu">
+            <svg
+                class="burger-close"
+                xmlns="http://www.w3.org/2000/svg"
+                width="23"
+                height="20"
+                viewBox="0 0 23 20"
+                fill="none"
+            >
+                <path
+                    d="M12.3622 0.189911H10.6377V9.24139H0.349609V10.7586H10.6377V19.8101H12.3622V10.7586H22.6504V9.24139H12.3622V0.189911Z"
+                    fill="#767676"
+                />
+            </svg>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Новая встреча</a></li>
+            </ul>
+        </div>
+    </body>
+</html>

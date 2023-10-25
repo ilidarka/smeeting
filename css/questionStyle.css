@@ -1,6 +1,6 @@
 .question-section .wrapper {
     justify-content: space-between;
-    gap: 84px;
+    gap: 20px;
 }
 .question-content {
     width: 100%;
@@ -27,7 +27,7 @@
     width: max-content;
 }
 .questions {
-    width: 75%;
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -61,7 +61,7 @@
 }
 .question-text {
     color: #111;
-    font-size: calc(18px + 6 * (100vw / 1920));
+    font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: 110%;
@@ -87,6 +87,10 @@
 .unnactive {
     stroke: #767676;
     cursor: pointer;
+}
+.desktop-question-image {
+    width: 100%;
+    max-width: 300px;
 }
 .previous {
     color: #767676;

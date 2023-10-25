@@ -13,6 +13,7 @@ let addMember = document.querySelector('.add-member');
 let memberItem = document.querySelectorAll('.member-item');
 let membersList = document.querySelector('.members-list');
 let memberDeleteButton = document.querySelectorAll('.member-delete-button');
+let addMemberButton = document.querySelector('.add-member-button');
 
 questionInput.addEventListener('input', () => {
     document.getElementById('input-label').innerHTML = `(${questionInput.value.length}/200)`;
@@ -33,18 +34,26 @@ function createNewMember() {
     let newMemberGender = document.createElement('span');
     newMemberGender.classList.add('member-gender');
     newMemberGender.textContent = 'Пол: мж';
+    let newMemberLink = document.createElement('div');
+    newMemberLink.classList.add('member-link');
+    let newMemberInput = document.createElement('input');
+    newMemberInput.classList.add('member-link-input');
+    newMemberInput.setAttribute('type', 'text');
+    newMemberInput.setAttribute('placeholder', 'link');
+    let newMemberButton = document.createElement('button');
+    newMemberButton.classList.add('link-button');
+    newMemberButton.innerText = 'Копировать ссылку';
+    newMemberLink.appendChild(newMemberInput);
+    newMemberLink.appendChild(newMemberButton);
+    newMember.appendChild(newMemberHeader);
+    newMember.appendChild(newMemberGender);
+    newMember.appendChild(newMemberLink);
+    membersList.appendChild(newMember);
 }
 
-/*
-                            <div class="member-link">
-                                <input class="member-link-input" type="text" placeholder="link" />
-                                <button class="link-button">
-                                    Копировать ссылку
-                                </button>
-                            </div>
-
-
-*/
+addMemberButton.addEventListener('click', () => {
+    createNewMember();
+});
 
 memberDeleteButton.forEach((item) => {
     item.addEventListener('click', () => {
