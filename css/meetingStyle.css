@@ -9,7 +9,7 @@
 }
 .meeting-header h2 {
     color: #111;
-    font-size: calc(38px + 62 * (100vw / 1920));
+    font-size: calc(38px + 17 * (100vw / 1920));
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
@@ -33,7 +33,7 @@
 .member-header h3,
 .questions-header h3 {
     color: #111;
-    font-size: calc(18px + 36 * (100vw / 1920));
+    font-size: calc(18px + 6 * (100vw / 1920));
     font-style: normal;
     font-weight: 700;
     line-height: 100%;

@@ -5,11 +5,11 @@
 }
 @media (max-width: 768px) {
     .meeting-header h2 {
-        font-size: calc(34px + (62 + 62 * 0.7) * ((100vw - 360px) / 1920));
+        font-size: calc(34px + (17 + 17 * 0.7) * ((100vw - 360px) / 1920));
     }
     .member-header h3,
     .questions-header h3 {
-        font-size: calc(18px + (36 + 36 * 0.7) * ((100vw - 360px) / 1920));
+        font-size: calc(18px + (6 + 6 * 0.7) * ((100vw - 360px) / 1920));
     }
     .member-header span,
     .questions-header span {
