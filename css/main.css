@@ -353,6 +353,8 @@ h3 {
     align-items: flex-end;
 }
 .about-title-span {
+    width: 100%;
+    text-align: left;
     color: #fefefe;
     font-size: 14px;
     font-style: normal;
@@ -376,9 +378,6 @@ h3 {
     width: 100%;
     height: 214px;
     object-fit: cover;
-}
-.about-title-span-mobile {
-    display: none;
 }
 .about-image-container {
     display: flex;
@@ -522,5 +521,8 @@ footer .contact {
 }
 
 .mobile-image {
+    display: none;
+}
+.mobile-button {
     display: none;
 }
