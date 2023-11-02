@@ -46,7 +46,6 @@
     .organization-section {
         background-image: none;
         background-color: #a11e2a;
-        padding: 0;
     }
     .organization-section .wrapper {
         width: 100%;
@@ -133,6 +132,7 @@
     }
     .organization-section .organization-section-firstSection {
         max-width: none;
+        width: 100%;
     }
     .about-section-button {
         display: none;
@@ -143,6 +143,20 @@
     .firstsection-button {
         background-color: #111 !important;
         color: #fefefe !important;
+    }
+    .about-section p {
+        max-width: none;
+        width: 100%;
+    }
+    .main-section-upper {
+        width: 100%;
+        max-width: none;
+    }
+    .about-content-middle {
+        padding-left: 0;
+    }
+    .about-title {
+        justify-content: flex-end;
     }
 }
 @media (max-width: 700px) {

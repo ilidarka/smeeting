@@ -61,6 +61,10 @@
     font-weight: 400;
     line-height: 120%;
     min-width: 300px;
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    background-color: #fff;
 }
 .result-table .answer {
     text-align: center;
@@ -106,4 +110,7 @@
 .header-firstRow th:nth-child(1),
 .header-secondRow th:nth-child(1) {
     text-align: left;
+    position: sticky;
+    left: 0;
+    z-index: 1;
 }

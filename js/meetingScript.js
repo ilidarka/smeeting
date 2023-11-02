@@ -64,6 +64,7 @@ memberDeleteButton.forEach((item) => {
 let handleEvent = (item) => {
     if (item.classList.contains('question-checked')) {
         item.classList.remove('question-checked');
+        item.classList.remove('question-hover');
     } else {
         item.classList.add('question-checked');
     }
@@ -74,6 +75,8 @@ function setEventListeners() {
     questionItemDelete = document.querySelectorAll('.question-item img');
     questionItem.forEach((item) => {
         item.addEventListener('click', () => handleEvent(item));
+        item.addEventListener('mouseover', () => item.classList.add('question-hover'));
+        item.addEventListener('mouseout', () => item.classList.remove('question-hover'));
     });
     questionItemDelete.forEach((item) => {
         item.addEventListener('click', () => {

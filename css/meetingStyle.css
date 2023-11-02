@@ -188,7 +188,7 @@
     line-height: 130%;
     text-align: left;
 }
-.question-item:hover {
+.question-hover {
     background: #313131;
     color: #fefefe;
 }

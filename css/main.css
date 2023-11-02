@@ -109,7 +109,7 @@ h3 {
 }
 .main-section h1 {
     color: #111;
-    font-size: calc(38px + 62 * (100% / 1920));
+    font-size: 53px;
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
@@ -365,14 +365,15 @@ h3 {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 .about-content-middle {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 30px;
+    padding-left: 187px;
 }
 .about-content-middle img {
     width: 100%;
@@ -445,6 +446,7 @@ h3 {
     width: 100%;
     height: 50px;
     margin-top: 20px;
+    max-width: 330px;
 }
 .organization-section-firstSection {
     max-width: 466px;
