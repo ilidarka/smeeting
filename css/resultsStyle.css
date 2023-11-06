@@ -62,7 +62,7 @@
     line-height: 120%;
     min-width: 300px;
     position: sticky;
-    left: 0;
+    left: -1px;
     z-index: 1;
     background-color: #fff;
 }
